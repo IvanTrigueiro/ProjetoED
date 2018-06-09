@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EstruturadeDados</class>
+ <widget class="QMainWindow" name="EstruturadeDados">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>993</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>EstruturadeDados</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));*/
+background-color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="Inicio">
+       <widget class="QPushButton" name="pilha">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>130</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Pilha Encadeada</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="listaEnc">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Lista Encadeada</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="fila">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>190</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Fila Encadeada</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="arvBin">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>250</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Árvore Binária</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Arvore">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <widget class="QPushButton" name="voltar_1">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>0</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Voltar</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="elemento_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+        <property name="text">
+         <string>Elemento:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>0</y>
+          <width>131</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 15pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+        <property name="text">
+         <string>Árvore Binaria</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineArvore">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>40</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inserirArvore">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>0</y>
+          <width>101</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Inserir</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="buscaArvore">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>0</y>
+          <width>91</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Busca</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="nNos">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>60</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+        <property name="text">
+         <string>Numero de Nos:</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="ListaEnc">
+       <widget class="QPushButton" name="voltar2">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>0</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Voltar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inserirFim">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>0</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Inserir Fim</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineElemento">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>50</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="linePosicao">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>70</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inserirMeio">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>0</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Inserir na posição</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="posLSE">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+        <property name="text">
+         <string>Posição:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="numdeElemLSE">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>0</y>
+          <width>141</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+        <property name="text">
+         <string>Número de Elementos</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="removerMeio">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>20</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Remover na posição</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inserirInicio">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>0</y>
+          <width>101</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Inserir Inicio</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="elemento">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+        <property name="text">
+         <string>Elemento:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="removerInicio">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>101</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Remover Inicio</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="removerFim">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>20</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Remover Fim</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="nElementos">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>20</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>0</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 15pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+        <property name="text">
+         <string>Lista Encadeada</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="buscarElemento">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>20</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Buscar Elemento</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="buscarPosicao">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>0</y>
+          <width>111</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Buscar Posição</string>
+        </property>
+       </widget>
+       <zorder>voltar2</zorder>
+       <zorder>inserirFim</zorder>
+       <zorder>lineElemento</zorder>
+       <zorder>linePosicao</zorder>
+       <zorder>inserirMeio</zorder>
+       <zorder>posLSE</zorder>
+       <zorder>removerMeio</zorder>
+       <zorder>inserirInicio</zorder>
+       <zorder>elemento</zorder>
+       <zorder>removerInicio</zorder>
+       <zorder>removerFim</zorder>
+       <zorder>nElementos</zorder>
+       <zorder>numdeElemLSE</zorder>
+       <zorder>label_3</zorder>
+       <zorder>buscarElemento</zorder>
+       <zorder>buscarPosicao</zorder>
+      </widget>
+      <widget class="QWidget" name="Pilha">
+       <widget class="QPushButton" name="voltar3">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>0</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Voltar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inserirPilha">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Inserir</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="removerPilha">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Remover</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineInserirPilha">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>220</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="elementoPilha">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>220</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+        <property name="text">
+         <string>Elemento:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="nElemPilha">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="numdeElemPilha">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>141</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+        <property name="text">
+         <string>Número de elementos:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>0</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 15pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+        <property name="text">
+         <string>Pilha</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="topoPilha">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Topo</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Fila">
+       <widget class="QPushButton" name="voltar4">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>0</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Voltar</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inserirFila">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Inserir</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="removerFila">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Remover</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="elementoFila">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>220</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+        <property name="text">
+         <string>Elemento:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="numdeFila">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>141</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+        <property name="text">
+         <string>Número de elementos:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineInserirFila">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>220</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="nElemFila">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>20</y>
+          <width>31</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>0</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 15pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));</string>
+        </property>
+        <property name="text">
+         <string>Fila</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="primeiroFila">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+font: 11pt &quot;Times New Roman&quot;;
+border-width: 1px;
+border-style: solid;
+border-radius: 6px;
+border-color: black;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(234, 234, 234, 255), stop:1 rgba(255, 21, 21, 255));
+}
+QPushButton:hover
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(255, 129, 0, 255), stop:1 rgba(255, 255, 255, 255));
+}
+QPushButton:pressed	
+{
+background-color: qlineargradient(spread:pad, x1:0.08, y1:0.085, x2:0.897818, y2:0.83, stop:0 rgba(156, 20, 20, 255), stop:1 rgba(255, 255, 255, 255));
+}</string>
+        </property>
+        <property name="text">
+         <string>Primeiro</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
